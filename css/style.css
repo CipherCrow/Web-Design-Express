@@ -12,6 +12,7 @@
 	margin: 0 auto;
 }
 			/*Cabeçalho*/
+
 header{
 	padding: 10px 0;
 }
@@ -25,24 +26,24 @@ header{
 nav.menuDesktop{
 	float: right;
 }
-nav.menuDesktop ul{
+.menuDesktop ul{
 	position: relative;
 	top: 9px;
 }
-nav.menuDesktop li{
+.menuDesktop li{
 	display: inline-block;
 	padding: 0 24px;
 }
-nav.menuDesktop li.selected{
+.menuDesktop li.selected{
 	font-weight: bolder;
 	text-decoration: underline;
 }
-nav.menuDesktop a{
+.menuDesktop a{
 	color: black;
 	text-decoration: none;
 	font-weight: lighter;
 }
-nav.menuDesktop a:hover{
+.menuDesktop a:hover{
 	text-decoration: underline;
 }
 			/*Section principal*/
@@ -57,22 +58,22 @@ section.principal{
 	background-position: center;
 	text-align: center;
 }
-section.principal h2{
+.principal h2{
 	color: #77c5bd;
 	font-size: 40px;
 	font-weight: bolder;
 }
-section.principal p{
+.principal p{
 	color: white;
 	font-size: 17px;
 	padding-top: 18px;
 	text-align: left;
 }
-section.principal .container{
+.principal .container{
 	position: relative;
 	z-index: 1;
 }
-section.principal .overlay{
+.principal .overlay{
 	z-index: 0;
 	position: absolute;
 	width: 100%;
@@ -81,7 +82,7 @@ section.principal .overlay{
 	left: 0;
 	top: 0;
 }
-section.principal .container input{
+.principal .container input{
 	width: 130px;
 	height: 40px;
 	background-color: #3f929b;
@@ -92,7 +93,7 @@ section.principal .container input{
 	margin: 50px 10%;
 }
 @media screen and (max-width: 780px){
-	section.principal .container input{
+	.principal .container input{
 		margin: 50px 38%;
 		width: 150px;
 		height: 50px;
@@ -101,16 +102,17 @@ section.principal .container input{
 }
 
 				/*Experiencia do usuario*/
+
 section.expUsuario{
 	text-align: center;
 	padding: 30px 0;
 }
-section.expUsuario .linhaDCima{
+.linhaDCima{
 	color: #77c5bd;
 	display: inline-block;
 	position: relative;
 }
-section.expUsuario .linhaDCima div{
+.linhaDCima div{
 	position: absolute;
 	left: 3px;
 	top: 0;
@@ -118,28 +120,56 @@ section.expUsuario .linhaDCima div{
 	height: 4px;
 	background-color: #77c5bd;
 }
-section.expUsuario .linhaDCima h2{
+.linhaDCima h2{
 	font-size: 27px;
 	font-weight: normal;
 }
-section.expUsuario .expUsuarioIcones {
+.expUsuario .expUsuarioIcones {
 	padding: 30px 0;
 	color: #8e675b;
 }
-section.expUsuario .expUsuarioIcones .singleBox{
+.expUsuario .expUsuarioIcones .singleBox{
 	float: left;
 	width: 32%;
 	padding: 0 10px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
-section.expUsuario .expUsuarioIcones .singleBox h2{
+.expUsuario .expUsuarioIcones .singleBox h2{
 	font-size: 90px;
 }
-section.expUsuario .expUsuarioIcones .singleBox p{
+.expUsuario .expUsuarioIcones .singleBox p{
 	font-size: 16px;
 }
 @media screen and (max-width: 780px){
-	section.expUsuario .expUsuarioIcones .singleBox{
+	.expUsuario .expUsuarioIcones .singleBox{
 	width: 100%;
 	}
 }
+			/*Equipe e sobre*/
+
+section.equipeSobre {
+	padding: 30px 0;
+	background-color: #e1e1e1;
+}
+.equipeSobre .container{
+	display: flex;
+}
+.equipeSobre .equipeContainer{
+	width: 50%;
+}
+.imgAvatar{
+	display: inline-block;
+	width: 70px;
+	border-radius: 20%;
+	background-size: 100% 100%;
+	background-color: gray;
+}
+.equipeSobre .sobreContainer{
+	width: 50%;
+}
+.equipeSobre .sobreContainer p{
+	color: black;
+	font-size:15px;
+	margin-top: 10px;
+}
+
