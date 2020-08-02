@@ -11,6 +11,11 @@
 	max-width: 1280px;
 	margin: 0 auto;
 }
+.w50{
+	width: 50%;
+	float: left;
+}
+.center{text-align: center;}
 			/*Cabeçalho*/
 
 header{
@@ -91,16 +96,8 @@ section.principal{
 	font-size: 19px;
 	float: right;
 	margin: 50px 10%;
+	cursor: pointer;
 }
-@media screen and (max-width: 780px){
-	.principal .container input{
-		margin: 50px 38%;
-		width: 150px;
-		height: 50px;
-		font-size: 20px;
-	}
-}
-
 				/*Experiencia do usuario*/
 
 section.expUsuario{
@@ -140,11 +137,6 @@ section.expUsuario{
 .expUsuario .expUsuarioIcones .singleBox p{
 	font-size: 16px;
 }
-@media screen and (max-width: 780px){
-	.expUsuario .expUsuarioIcones .singleBox{
-	width: 100%;
-	}
-}
 			/*Equipe e sobre*/
 
 section.equipeSobre {
@@ -153,16 +145,32 @@ section.equipeSobre {
 }
 .equipeSobre .container{
 	display: flex;
+	flex-wrap: wrap;
 }
 .equipeSobre .equipeContainer{
 	width: 50%;
 }
+.avatar{
+	padding: 15px 0 0 15px;
+}
 .imgAvatar{
 	display: inline-block;
 	width: 70px;
-	border-radius: 20%;
+	height: 70px;
+	border-radius: 50%;
 	background-size: 100% 100%;
 	background-color: gray;
+}
+.descricaoAvatar{
+	padding-left: 10px;
+	display: inline-block;
+	width: calc(100% - 70px);
+}
+.descricaoAvatar h3{
+	font-style: italic;
+}
+.descricaoAvatar p{
+	font-weight: lighter;
 }
 .equipeSobre .sobreContainer{
 	width: 50%;
@@ -172,4 +180,55 @@ section.equipeSobre {
 	font-size:15px;
 	margin-top: 10px;
 }
+				/*Sessao inscricao*/
 
+section.inscricao{
+	background-color:	#77c5bd;
+	padding: 20px 0;
+}
+.inscricaoTexto{
+	color: white;
+	font-weight: normal;
+}
+.inscricaoForm input[type=email]{
+	display: inline-block;
+	width: calc(100% - 120px);
+	height: 40px;
+	background-color: white;
+	border: 1px solid #ccc;
+}
+.inscricaoForm input[type=submit]{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background-color: #1d6c64;
+	color: white;
+	cursor: pointer;
+	border:none;
+	font-size: 18px;
+}
+				/*Responsividade*/
+
+@media screen and (max-width: 780px){
+	.w50{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.principal .container input{
+		margin: 50px 38%;
+		width: 150px;
+		height: 50px;
+		font-size: 20px;
+	}
+	.expUsuario .expUsuarioIcones .singleBox{
+	width: 100%;
+	}
+	.equipeSobre .equipeContainer{
+		width: 70%;
+		padding-bottom: 20px;
+	}
+	.equipeSobre .sobreContainer{
+		width: 100%;
+		padding-top: 20px;
+	}
+}
