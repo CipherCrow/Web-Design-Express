@@ -15,6 +15,10 @@
 	width: 50%;
 	float: left;
 }
+.w33{
+	width: 32%;
+	float: left;
+}
 .center{text-align: center;}
 			/*Cabeçalho*/
 
@@ -207,12 +211,36 @@ section.inscricao{
 	border:none;
 	font-size: 18px;
 }
+				/*Galeria de cards*/
+section.cards{
+	padding: 20px 0;
+}
+.card-item{
+	padding: 0 50px;
+}
+.card-item h3{
+	font-weight: bolder;
+	font-size:20px;
+	margin-bottom: 10px;
+}
+.card-item img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
 				/*Responsividade*/
 
 @media screen and (max-width: 780px){
 	.w50{
 		width: 100%;
 		margin-bottom: 20px;
+	} 
+	.w33{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.container{
+		padding: 0 20px;
 	}
 	.principal .container input{
 		margin: 50px 38%;
