@@ -55,6 +55,36 @@ nav.menuDesktop{
 .menuDesktop a:hover{
 	text-decoration: underline;
 }
+				/*Menu mobile*/
+nav.menu-mobile{
+	display: none;
+	float: right;
+}
+nav.menu-mobile h2{
+	cursor: pointer;
+}
+nav.menu-mobile ul{
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 2;
+	text-align: center;
+	display: none;
+}
+nav.menu-mobile li{
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+nav.menu-mobile li.selected{
+	background-color: rgb(225,225,225);
+}
+nav.menu-mobile a{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
 			/*Section principal*/
 
 section.principal{
@@ -272,7 +302,7 @@ footer.footer2{
 		padding: 0 20px;
 	}
 	.principal .container input{
-		margin: 50px 38%;
+		margin: 50px 0;
 		width: 150px;
 		height: 50px;
 		font-size: 20px;
@@ -287,5 +317,12 @@ footer.footer2{
 	.equipeSobre .sobreContainer{
 		width: 100%;
 		padding-top: 20px;
+	}
+}
+@media screen and (max-width: 500px){
+	nav.menuDesktop{display: none;}
+	nav.menu-mobile{
+		display: block;
+
 	}
 }
