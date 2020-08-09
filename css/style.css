@@ -20,6 +20,7 @@
 	float: left;
 }
 .center{text-align: center;}
+
 			/*Cabeçalho*/
 
 header{
@@ -31,6 +32,10 @@ header{
 .logo h2{
 	font-weight: normal;
 	font-size: 23px;
+}
+.logo a{
+	color: black;
+	text-decoration: none;
 }
 nav.menuDesktop{
 	float: right;
@@ -348,7 +353,29 @@ section.sobre__noticia{
 	line-height: 25px;
 	text-align: justify;
 }
+				/*Parallax*/
 
+section.sobre__parallax{
+	padding: 30px 0;
+	width: 100%;/*Devido a alguns navegadores, caso for usar o parallax deve-se definir a width*/
+	min-height: 200px;
+	background-image: url('../images/img1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.sobre__parallax p{
+	margin: 10px 0;
+	color: white;
+}
+.sobre__parallax h2{
+	border:1px solid #44d4c5;
+	padding: 5px 0;
+	color: #44d4c5;
+	text-align: center;
+	display: block;
+	font-size: 25px;
+}
 				/*Responsividade*/
 
 @media screen and (max-width: 780px){
