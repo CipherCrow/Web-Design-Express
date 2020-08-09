@@ -376,6 +376,41 @@ section.sobre__parallax{
 	display: block;
 	font-size: 25px;
 }
+				/*Section equipe*/
+section.sobre__equipe{
+	padding: 30px 0;
+}
+.sobre__circles{
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.circles-singles{
+	text-align: center;
+	padding: 0 20px;
+	width: 32%;
+}
+.circles-singles h3{
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 23px; 
+}
+.avatar-single{
+	position: relative;
+	width: 60%;
+	padding-top: 60%;
+	margin: 0 auto;
+}
+.avatar-single-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	background-color: #ccc;
+	background-size: 100% 100%;
+}
 				/*Responsividade*/
 
 @media screen and (max-width: 780px){
@@ -417,9 +452,13 @@ section.sobre__parallax{
 
 }
 @media screen and (max-width: 500px){
+	.circles-singles{
+		width: 100%;
+		padding: 10px 0px;
+	}
+
 	nav.menuDesktop{display: none;}
 	nav.menu-mobile{
 		display: block;
-
 	}
 }
