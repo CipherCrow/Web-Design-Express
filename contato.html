@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto Web Design Express Final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="author" content="Jonas Torquatro Oliveira da Silva">
+	<meta name="keywords" content="Danki Code,Web Design,Curso,Programação,Projeto">
+	<meta name="description" content="Site criado como projeto final do curso de Web Design Express da Danki Code" >
+	<link rel="stylesheet" href="css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<h2><a href="index.html">Danki Code</a></h2>
+			</div>
+			<nav class="menuDesktop">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li class="selected"><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li class="selected"><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<section style="background-image: url('images/bg1.jpg');" class="contato__title-page">
+		<div class="overlay__title-page"></div>
+		<div class="container">
+			<h2>Contato</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis, lorem quis commodo tristique, erat dui tincidunt nulla, non lobortis dolor massa sed ligula. </p>
+		</div>
+	</section>
+	<section class="contato__contato">
+		<div class="container">
+			<div class="w60 formulario">
+				<h2>Entre em contato por E-mail</h2>
+				<form method="post">
+					<div class="w50">
+						<input placeholder="Nome" type="text" name="nome" required=""> 					
+					</div>
+					<div class="w50">
+						<input placeholder="Sobrenome" type="text" name="sobrenome" required="">
+					</div>
+					<div class="w100">
+						<input placeholder="Seu melhor E-mail!" type="email" name="email" required="">	
+					</div>
+					<div class="w100">
+						<textarea>Insira aqui a sua mensagem!</textarea>					
+					</div>
+					<input type="submit" name="ok-btn" value="Enviar!">
+				</form>
+			</div>
+			<div class="w40 tags-form">
+				<h2><div class="fa fa-comment"></div>Fale com a nossa equipe!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="tags"><i class="fas fa-phone-alt"></i> (48)9999-9991</p>
+				<p class="tags"><i class="fas fa-phone-alt"></i> (48)9999-9992</p>
+				<p class="tags"><i class="fas fa-phone-alt"></i> (48)9999-9993</p>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+
+
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33 footer-item">
+				<h3>Aonde Estamos?</h3>
+				<p><i class="fas fa-map-pin"></i> R. Fulano da silva, Coqueiros, Floripa/SC</p>
+				<p><i class="fas fa-phone-alt"></i> (48)9999-9999</p>
+			</div>
+			<div class="w33 footer-item">
+				<h3>Links Úteis</h3>
+				<p><a href="https://dankicode.com/" target="_blank">Danki Code</a></p>
+				<p><a href="https://www.w3schools.com/" target="_blank">W3schools</a></p>
+			</div>
+			<div class="w33 footer-item">
+				<h3>Conecte-se conosco</h3>
+				<div class="footer-icons">
+					<p><a href="https://pt-br.facebook.com/dankicode/" target="_blank"><i class="fab fa-facebook-square"></i></a></p>
+					<p><a href="https://www.instagram.com/guigrillo13/?hl=pt-br" target="_blank"><i class="fab fa-instagram-square"></i></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</footer>
+	<footer class="footer2">
+		<p>Todos os direitos reservados.</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		$('nav.menu-mobile h2').click(function(){
+			$('nav.menu-mobile ul').slideToggle();
+		});
+	</script>
+</body>
+</html>

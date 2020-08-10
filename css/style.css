@@ -19,6 +19,14 @@
 	width: 32%;
 	float: left;
 }
+.w60{
+	width: 59%;
+	float: left;
+}
+.w40{
+	width: 38%;
+	float: right;
+}
 .center{text-align: center;}
 
 			/*Cabeçalho*/
@@ -439,18 +447,108 @@ section.sobre__final h2{
 	font-size: 20px;
 	color: white;
 }
-
+												/*Página contato
+				Painel								*/
+section.contato__title-page{
+	min-height: 160px;
+	padding: 30px 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.contato__title-page > .container{
+	position: relative;
+	z-index: 1;
+}
+.contato__title-page h2{
+	color: #44d4c5;
+	font-size: 35px;
+	font-weight: normal;
+}
+.contato__title-page p{
+	color: white;
+	font-size: 17px;
+	font-weight: normal;
+}
+				/*Contato*/
+section.contato__contato{
+	padding: 30px 0;
+}
+section.contato__contato .w50,.w100{
+	padding: 0 10px; 
+}
+.formulario h2{
+	text-align: center;
+	background-color: #DDDDDD;
+	color: #acac9d;
+	padding: 4px 0;
+	margin-bottom: 5px;
+}
+.formulario input[type=text],input[type=email]{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	margin: 8px 0; 
+}
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding-left: 5px; 
+	resize: vertical;
+}
+.formulario input[type=submit]{
+	width: 130px;
+	height: 40px;
+	background-color: #249b8f;
+	border: none;
+	color: white;
+	font-size: 19px;
+	float: right;
+	cursor: pointer;
+}
+.tags-form h2{
+	text-align: center;
+	font-weight: normal;
+	padding: 10px 0;
+}
+.tags-form p{
+	text-align: center;
+	font-weight: lighter;
+	padding: 8px 0;
+}
+.tags-form p.tags{
+	color: white;
+	background-color: #249b8f;
+	text-align: center;
+	padding: 6px 0; 
+	margin-bottom: 10px;
+}
 				/*Responsividade*/
 
 @media screen and (max-width: 780px){
+
+	.formulario input[type=text]{
+		margin-bottom: 0; 
+	}
+	section.contato__contato .w100{
+		margin-bottom: 20px;
+	}
 	.w50,.w33{
 		width: 100%;
 		margin-bottom: 20px;
+	}
+	.w60,.w40{
+		width: 100%;
+		margin-bottom: 0px;
 	} 
 	.container{
 		padding: 0 20px;
 	}
 				/*Pagina Home*/	
+
 	.principal .container input{
 		margin: 50px 0;
 		width: 150px;
@@ -458,7 +556,7 @@ section.sobre__final h2{
 		font-size: 20px;
 	}
 	.expUsuario .expUsuarioIcones .singleBox{
-	width: 100%;
+		width: 100%;
 	}
 	.equipeSobre .equipeContainer{
 		width: 70%;
@@ -470,6 +568,9 @@ section.sobre__final h2{
 	}
 					/*Sobre pagina*/
 
+	section.title-page h2{
+		text-align: center;
+	}
 	.sobre__single-news img{
 		width: 100%;
 	}
