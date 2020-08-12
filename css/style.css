@@ -196,9 +196,11 @@ section.equipeSobre {
 }
 .equipeSobre .equipeContainer{
 	width: 50%;
+	margin: 0 auto;
 }
 .avatar{
-	padding: 15px 0 0 15px;
+	padding-top: 15px;
+	padding-left: 15px;
 }
 .imgAvatar{
 	display: inline-block;
@@ -534,11 +536,12 @@ section.contato__contato .w50,.w100{
 }
 				/*Responsividade*/
 
-@media only screen and (max-width: 780px){
+@media screen and (max-width: 780px){
 
 	.formulario input[type=text]{
 		margin-bottom: 0; 
 	}
+	
 	section.contato__contato .w100{
 		margin-bottom: 20px;
 	}
@@ -565,7 +568,7 @@ section.contato__contato .w50,.w100{
 		width: 100%;
 	}
 	.equipeSobre .equipeContainer{
-		width: 70%;
+		width: 100%;
 		padding-bottom: 20px;
 	}
 	.equipeSobre .sobreContainer{
@@ -589,7 +592,7 @@ section.contato__contato .w50,.w100{
 	
 }
 
-@media only screen and (max-width: 500px){
+@media  screen and (max-width: 500px){
 
 	.circles-singles{
 		width: 100%;
