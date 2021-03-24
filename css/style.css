@@ -11,56 +11,53 @@
 	max-width: 1280px;
 	margin: 0 auto;
 }
+.w100{
+	width: 100%;
+}
 .w50{
 	width: 50%;
-	float: left;
 }
 .w33{
-	width: 32%;
-	float: left;
+	width: 33.3%;
 }
 .w60{
-	width: 59%;
-	float: left;
+	width: 60%;
 }
 .w40{
-	width: 38%;
-	float: right;
+	width: 40%;
 }
 .center{text-align: center;}
+html{font-size: 10px;scroll-behavior: smooth;}
 
 			/*Cabeçalho*/
 
 header{
-	padding: 10px 0;
+	padding: 1rem 0;
 }
-.logo{
-	float: left;
+header > .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 2rem;
 }
 .logo h2{
 	font-weight: normal;
-	font-size: 23px;
+	font-size: 2.6rem;
 }
 .logo a{
 	color: black;
 	text-decoration: none;
 }
-nav.menuDesktop{
-	float: right;
-}
-.menuDesktop ul{
-	position: relative;
-	top: 9px;
-}
 .menuDesktop li{
 	display: inline-block;
-	padding: 0 24px;
+	padding: 0 2.4rem;
 }
 .menuDesktop li.selected{
 	font-weight: bolder;
 	text-decoration: underline;
 }
 .menuDesktop a{
+	font-size: 1.6rem;
 	color: black;
 	text-decoration: none;
 	font-weight: lighter;
@@ -71,7 +68,9 @@ nav.menuDesktop{
 				/*Menu mobile*/
 nav.menu-mobile{
 	display: none;
-	float: right;
+}
+.menu-mobile i{
+	font-size: 2.5rem;
 }
 nav.menu-mobile h2{
 	cursor: pointer;
@@ -81,14 +80,14 @@ nav.menu-mobile ul{
 	background-color: white;
 	position: absolute;
 	left: 0;
-	top: 50px;
+	top: 5rem;
 	z-index: 2;
 	text-align: center;
 	display: none;
 }
 nav.menu-mobile li{
-	padding: 8px 0;
-	border-bottom: 1px solid black;
+	padding: .8rem 0;
+	border-bottom: .1rem solid black;
 }
 nav.menu-mobile li.selected{
 	background-color: rgb(225,225,225);
@@ -97,13 +96,14 @@ nav.menu-mobile a{
 	display: block;
 	color: black;
 	text-decoration: none;
+	font-size: 2rem;
 }
 			/*Section principal*/
 
 section.principal{
 	position: relative;
 	width: 100%;
-	padding: 120px 0 180px 0;
+	padding: 12rem 0 18rem 0;
 	background-image: url("../images/bg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -112,13 +112,13 @@ section.principal{
 }
 .principal h2{
 	color: #77c5bd;
-	font-size: 40px;
+	font-size: 4rem;
 	font-weight: bolder;
 }
 .principal p{
 	color: white;
-	font-size: 17px;
-	padding-top: 18px;
+	font-size: 1.7rem;
+	padding-top: 1.8rem;
 	text-align: left;
 }
 .principal .container{
@@ -135,21 +135,21 @@ section.principal{
 	top: 0;
 }
 .principal .container input{
-	width: 130px;
-	height: 40px;
+	width: 13rem;
+	height: 4rem;
 	background-color: #3f929b;
 	border: none;
 	color: white;
-	font-size: 19px;
+	font-size: 1.9rem;
 	float: right;
-	margin: 50px 10%;
+	margin: 5rem 10%;
 	cursor: pointer;
 }
 				/*Experiencia do usuario*/
 
 section.expUsuario{
 	text-align: center;
-	padding: 30px 0;
+	padding: 3rem 0;
 }
 .linhaDCima{
 	color: #77c5bd;
@@ -158,36 +158,36 @@ section.expUsuario{
 }
 .linhaDCima div{
 	position: absolute;
-	left: 3px;
+	left: .3rem;
 	top: 0;
-	width: 140px;
-	height: 4px;
+	width: 14rem;
+	height: .4rem;
 	background-color: #77c5bd;
 }
 .linhaDCima h2{
-	font-size: 27px;
+	font-size: 2.7rem;
 	font-weight: normal;
 }
 .expUsuario .expUsuarioIcones {
-	padding: 30px 0;
+	padding: 3rem 0;
 	color: #8e675b;
 }
 .expUsuario .expUsuarioIcones .singleBox{
 	float: left;
 	width: 32%;
-	padding: 0 10px;
-	margin-bottom: 20px;
+	padding: 0 1rem;
+	margin-bottom: 2rem;
 }
 .expUsuario .expUsuarioIcones .singleBox h2{
-	font-size: 90px;
+	font-size: 9rem;
 }
 .expUsuario .expUsuarioIcones .singleBox p{
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 			/*Equipe e sobre*/
 
 section.equipeSobre {
-	padding: 30px 0;
+	padding: 3rem 0;
 	background-color: #e1e1e1;
 }
 .equipeSobre > 	 .container{
@@ -199,26 +199,33 @@ section.equipeSobre {
 	margin: 0 auto;
 }
 .avatar{
-	padding-top: 15px;
-	padding-left: 15px;
+	padding-top: 1.5rem;
+	padding-left: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .imgAvatar{
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	width: 7rem;
+	height: 7rem;
 	border-radius: 50%;
 	background-size: 100% 100%;
 	background-color: gray;
 }
 .descricaoAvatar{
-	padding-left: 10px;
+	padding-left: 1rem;
 	display: inline-block;
-	width: calc(100% - 70px);
+	width: calc(100% - 7rem);
 }
 .descricaoAvatar h3{
+	font-size: 2.2rem;
 	font-style: italic;
+	font-weight: normal;
 }
 .descricaoAvatar p{
+	padding-left: .5rem;
+	font-size: 1.5rem;
 	font-weight: lighter;
 }
 .equipeSobre .sobreContainer{
@@ -226,68 +233,90 @@ section.equipeSobre {
 }
 .equipeSobre .sobreContainer p{
 	color: black;
-	font-size:15px;
-	margin-top: 10px;
+	font-size:1.5rem;
+	margin-top: 1rem;
 }
 				/*Sessao inscricao*/
 
 section.inscricao{
 	background-color:	#77c5bd;
-	padding: 20px 0;
+	padding: 2rem 0;
+}
+.inscricao > .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 .inscricaoTexto{
+	font-size: 2rem;
 	color: white;
 	font-weight: normal;
 }
 .inscricaoForm input[type=email]{
 	display: inline-block;
-	width: calc(100% - 120px);
-	height: 40px;
+	width: calc(100% - 12rem);
+	height: 4rem;
 	background-color: white;
-	border: 1px solid #ccc;
+	border: .1rem solid #ccc;
 }
 .inscricaoForm input[type=submit]{
 	display: inline-block;
-	width: 120px;
-	height: 40px;
+	width: 12rem;
+	height: 4rem;
 	background-color: #1d6c64;
 	color: white;
 	cursor: pointer;
 	border:none;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 				/*Galeria de cards*/
 section.cards{
-	padding: 40px 0;
+	padding: 4rem 0;
+}
+.cards > .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 .card-item{
-	padding: 0 50px;
+	padding: 0 1rem;
 }
 .card-item h3{
 	font-weight: bolder;
-	font-size:20px;
-	margin-bottom: 10px;
+	font-size:2rem;
+	margin-bottom: 1rem;
 }
 .card-item img{
 	max-width: 100%;
 	max-height: 100%;
 }
+.card-item p{
+	font-size: 1.6rem;
+}
 				/*Footers*/
 footer.footer1{
-	padding: 30px 0;
+	padding: 3rem 0;
 	background-color: #77C5BD;
 	text-align: center;
+}
+.footer1 > .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 .footer-item{
 	color: white;
 }
 .footer-item h3{
-	font-weight: normal;
-	font-size:20px;
+	font-weight: bold;
+	font-size:2.2rem;
 }
 .footer-item p{
-	font-size:15px;
-	font-weight: lighter;
+	font-size:1.6rem;
+	font-weight: normal;
 }
 .footer-item a{
 	text-decoration: none;
@@ -295,23 +324,23 @@ footer.footer1{
 }
 .footer-item > .footer-icons p{
 	display: inline-block;
-	font-size: 30px;
+	font-size: 3rem;
 }
 footer.footer2{
-	padding: 12px;
+	padding: 1.2rem;
 	background-color: #237a70;
 }
 .footer2 p{
-	font-size:16px;
+	font-size:1.6rem;
 	color: white;
 	text-align: center;
 }
 														/*Segunda pagina!!
 				Sobre       	*/
 section.title-page{
-	padding: 30px;
+	padding: 3rem;
 	width: 100%;
-	min-height: 200px;
+	min-height: 20rem;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -332,17 +361,17 @@ section.title-page{
 }
 section.title-page h2{
 	color: #44d4c5;
-	font-size: 35px;
+	font-size: 3.5rem;
 	font-weight: normal;
 }
 section.title-page p{
 	color: white;
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 				/*Noticia*/
 
 section.sobre__noticia{
-	padding: 30px 0;
+	padding: 3rem 0;
 }
 .sobre__single-news img{
 	max-width: 100%;
@@ -350,25 +379,27 @@ section.sobre__noticia{
 	width: 48%;
 }
 .sobre__single-news p{
-	padding: 10px 15px; 
+	padding: 1rem 1.5rem; 
 	float: left;
 	width: 48%;
 	font-weight: normal;
-	line-height: 25px;
+	line-height: 2.5rem;
 	text-align: justify;
+	font-size: 1.6rem;
 }
 .sobre__paragrafo-noticias p{ 
 	float: left;
 	font-weight: normal;
-	line-height: 25px;
+	line-height: 2.5rem;
 	text-align: justify;
+	font-size: 1.6rem;
 }
 				/*Parallax*/
 
 section.sobre__parallax{
-	padding: 30px 0;
+	padding: 3rem 0;
 	width: 100%;/*Devido a alguns navegadores, caso for usar o parallax deve-se definir a width*/
-	min-height: 200px;
+	min-height: 20rem;
 	background-image: url('../images/img1.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -381,35 +412,41 @@ section.sobre__parallax{
 	z-index: 1;
 }
 .sobre__parallax p{
-	margin: 10px 0;
+	margin: 1rem 0;
+	font-size: 1.6rem;
 	color: white;
 }
 .sobre__parallax h2{
-	border:1px solid #44d4c5;
-	padding: 5px 0;
+	border:.1rem solid #44d4c5;
+	padding: .5rem 0;
 	color: #44d4c5;
 	text-align: center;
 	display: block;
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 				/*Section equipe*/
 section.sobre__equipe{
-	padding: 30px 0;
+	padding: 3rem 0;
 }
 .sobre__circles{
-	margin-top: 15px;
+	margin-top: 1.5rem;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 .circles-singles{
 	text-align: center;
-	padding: 0 20px;
+	padding: 0 2rem;
 	width: 32%;
 }
 .circles-singles h3{
-	margin-top: 8px;
+	margin-top: .8rem;
 	font-weight: normal;
-	font-size: 23px; 
+	font-size: 2.3rem; 
+}
+.circles-singles p{
+	font-size: 1.6rem;
 }
 .avatar-single{
 	position: relative;
@@ -431,15 +468,15 @@ section.sobre__equipe{
 				
 section.sobre__final{
 	background-color: rgba(225,225,255);
-	border-top: 2px solid rgb(210,210,210);
-	padding: 20px 0;
+	border-top: .2rem solid rgb(210,210,210);
+	padding: 2rem 0;
 }
 section.sobre__final p{
-	margin-top: 12px;
-	font-size: 16px;
+	margin-top: 1.2rem;
+	font-size: 1.6rem;
 }
 section.sobre__final h2{
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 .card-text{
 	position: relative;
@@ -449,17 +486,17 @@ section.sobre__final h2{
 }
 .card-text h3{
 	position: absolute;
-	left: 10px;
-	bottom: 10px;
+	left: 1rem;
+	bottom: 1rem;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 2rem;
 	color: white;
 }
 												/*Página contato
 				Painel								*/
 section.contato__title-page{
-	min-height: 160px;
-	padding: 30px 0;
+	min-height: 16rem;
+	padding: 3rem 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -471,109 +508,143 @@ section.contato__title-page{
 }
 .contato__title-page h2{
 	color: #44d4c5;
-	font-size: 35px;
+	font-size: 3.5rem;
 	font-weight: normal;
 }
 .contato__title-page p{
 	color: white;
-	font-size: 17px;
+	font-size: 1.7rem;
 	font-weight: normal;
 }
 				/*Contato*/
 section.contato__contato{
-	padding: 30px 0;
+	padding: 3rem 0;
 }
 section.contato__contato .w50,.w100{
-	padding: 0 10px; 
+	padding: 0 1rem; 
+}
+.contato__contato > .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+.formulario form{
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+	justify-content: center;
 }
 .formulario h2{
+	font-size: 2.2rem;
 	text-align: center;
 	background-color: #DDDDDD;
 	color: #acac9d;
-	padding: 4px 0;
-	margin-bottom: 5px;
+	padding: .4rem 0;
+	margin-bottom: .5rem;
+}
+.formulario form div{
+	display: inline-block;
 }
 .formulario input[type=text],input[type=email]{
 	width: 100%;
-	height: 35px;
+	height: 3.5rem;
 	border: 1px solid #ccc;
-	padding-left: 5px;
-	margin: 8px 0; 
+	padding-left: .5rem;
+	margin: .5rem 0; 
 }
 .formulario textarea{
 	width: 100%;
-	height: 120px;
+	height: 12rem;
 	border: 1px solid #ccc;
-	padding-left: 5px; 
+	padding-left: .5rem; 
 	resize: vertical;
+	margin: .5rem 0;
 }
 .formulario input[type=submit]{
-	width: 130px;
-	height: 40px;
+	width: 13rem;
+	height: 4rem;
 	background-color: #249b8f;
 	border: none;
 	color: white;
-	font-size: 19px;
+	font-size: 1.9rem;
 	float: right;
 	cursor: pointer;
+	display: inline-block;
 }
 .tags-form h2{
+	font-size: 1.6rem;
 	text-align: center;
 	font-weight: normal;
-	padding: 10px 0;
+	padding: 1rem 0;
 }
 .tags-form p{
+	font-size: 1.6rem;
 	text-align: center;
 	font-weight: lighter;
-	padding: 8px 0;
+	padding: .8rem 0;
 }
 .tags-form p.tags{
 	color: white;
 	background-color: #249b8f;
 	text-align: center;
-	padding: 6px 0; 
-	margin-bottom: 10px;
+	padding: .6rem 0; 
+	margin-bottom: 1rem;
 }
 				/*Responsividade*/
 
 @media screen and (max-width: 780px){
 
+	.inscricao > .container .w50{
+		width: 100%;
+	}
+	.cards > .container .w33{
+		width: 50%;
+	}
+	.cards > .container .w33 h3,
+	.cards > .container .w33 p{
+		text-align: center;
+	}
 	.formulario input[type=text]{
 		margin-bottom: 0; 
 	}
 	
 	section.contato__contato .w100{
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
+	}
+	.tags-form{
+		margin-top: 1rem;
+		border-top: 4px dashed #ccc;
 	}
 	.w50,.w33{
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
 	}
 	.w60,.w40{
 		width: 100%;
-		margin-bottom: 0px;
+		margin-bottom: 0rem;
 	} 
 	.container{
-		padding: 0 20px;
+		padding: 0 2rem;
 	}
 				/*Pagina Home*/	
 
 	.principal .container input{
-		margin: 50px 0;
-		width: 150px;
-		height: 50px;
-		font-size: 20px;
+		margin: 5rem 0;
+		width: 15rem;
+		height: 5rem;
+		font-size: 2rem;
 	}
 	.expUsuario .expUsuarioIcones .singleBox{
 		width: 100%;
 	}
 	.equipeSobre .equipeContainer{
 		width: 100%;
-		padding-bottom: 20px;
+		padding-bottom: 2rem;
 	}
 	.equipeSobre .sobreContainer{
 		width: 100%;
-		padding-top: 20px;
+		padding-top: 2rem;
 	}
 					/*Sobre pagina*/
 
@@ -587,16 +658,22 @@ section.contato__contato .w50,.w100{
 		width: 100%;
 	}
 	.sobre__paragrafo-noticias p{
-		padding: 0 20px;
+		padding: 0 2rem;
+	}
+	.circles-singles{
+		width: 45%;
 	}
 	
 }
 
 @media  screen and (max-width: 500px){
-
+	.cards > .container .w33{
+		width: 95%;
+		padding: 0; 
+	}
 	.circles-singles{
 		width: 100%;
-		padding: 10px 0px;
+		padding: 1rem 0rem;
 	}
 	.card-text img{
 		max-width: 100%;
