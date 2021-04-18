@@ -404,10 +404,10 @@ section.cards{
 	text-align: center;
 	border: 2px solid gray	/*#77c5bd*/;
 	box-shadow: 0 0.2rem 0.3rem rgba(0,0,0, 0.5);
-	transition: 2.3s;
+	transition: .5s;
 }
 .card-item:hover{
-	max-width: 40%;
+	transform: scale(110%);
 }
 
 .card-item h3{
